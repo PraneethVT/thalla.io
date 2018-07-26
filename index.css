@@ -3,7 +3,7 @@ body {
   font-family: Muli;
 }
 
-/* Start of landing page */
+/* LANDING PAGE */
 #landing {
   background-color: blue;
 }
@@ -62,7 +62,7 @@ body {
   top: 60%;
 }
 
-/* Arrow stuff */ 
+/* ARROW STUFF */ 
 #arrow_holder {
   width: 100%;
 }
@@ -97,17 +97,20 @@ body {
     transform: translateY(4px);
   }
 }
-/* Arrow stuff */
+/* ARROW STUFF */
 
-/* End of landing page */
+/* LANDING PAGE */
 
-/* Start of about me */
+/* ABOUT ME */
 #about_me {
   width: 100%;
+  background-color: #EEEEEE;
 }
 #about_me_pic_container {
   width: 70%;
-  margin: 5% auto;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 2em;
 }
 
 #about_me_pic {
@@ -116,6 +119,7 @@ body {
 
 #about_me_text {
   text-align: center;
+  margin-top: 1em;
 }
 
 #about_me_name {
@@ -144,14 +148,16 @@ body {
   margin: 0 auto;
   color: #505050;
   width: 60%;
-  margin-bottom: 4em;
+  padding-bottom: 4em;
 }
 
 #hello {
   font-size: 24px;
 }
 
-/* end of about me */
+/* ABOUT ME */
+
+/* LATEST PROJECTS */
 #latest_projects {
   width: 100%;
   background-color: #F5F5F5;
@@ -179,20 +185,167 @@ body {
   margin-bottom: 2em;
 }
 
-.project_img {
+.project {
   width: 100%;
+  position: relative;
+  margin: 0;
 }
+
+.project_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.project_text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  font-weight: 200;
+  font-size: 1.5em;
+  margin: 0;
+}
+.project_button {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 0;
+  text-align: center;
+  width: 8em;
+  background-color: white;
+  color: black;
+  font-size: .8em;
+  border-color: #232323;
+  border-width: 1px;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition-duration: 0.4s;
+}
+
+.project:hover + .project_button {
+  opacity: 1;
+}
+
+.project_button:hover {
+  background-color: #232323;
+  color: white;
+  outline: none;
+}
+
+#github_button_container {
+  width: 100%;
+  text-align: center;
+}
+
+#github_button {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  text-align: center;
+  width: 10em;
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  border-color: #232323;
+  border-width: 1px;
+  padding: 14px 20px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition-duration: 0.4s;
+
+}
+
+#github_button:hover {
+  background-color: #333333;
+  color: white;
+  outline: none;
+}
+
+/* More projects button */
+/* #recentProjectsMoreButton {
+  font-family: 'Muli', sans-serif;;
+  background-color: white;
+  color: black;;
+  font-size: 1.5em;
+  border-color: #232323;
+  border-width: 1px;
+  padding: 14px 25px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition-duration: 0.4s;
+  margin-top: 2em;
+}
+
+#recentProjectsMoreButton:hover {
+  background-color: #333333;;
+  color: white;
+} */
+
+
+
+
+/* LATEST PROJECTS */
+
+/* EXPERIENCES */
 
 #experiences {
   width: 100%;
 }
-.experience_img {
-  width: 100%;
+
+#experiences_header {
+  text-align: center;
+  margin: 2em auto 1em auto;
+  font-size: 24px;
+  font-weight: 700;
 }
 
+.experience {
+  width: 80%;
+  margin: 1em auto 1em auto;
+}
+.experience_img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.experience_title {
+  font-size: 22px;
+  margin-top: .5em;
+  margin-bottom: 0;
+  color: #2196f3;
+}
+
+.experience_position {
+  font-size: 16px;
+  margin-top: .5em;
+  margin-bottom: 0;
+  color: rgb(94, 149, 22);
+  font-weight: 700;
+}
+
+.experience_location {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: .5em;
+  margin-bottom: 0;
+}
+
+.experience_summary {
+  font-size: 15px;
+  margin-top: 1em;
+  margin-bottom: 5em;
+  color: #50555c;
+  font-weight: 100;
+}
+
+/* EXPERIENCES */
 
 
-/* footer */
+
+/* FOOTER */
 #footer {
   text-align: center;
   color: white;
@@ -224,4 +377,4 @@ body {
   color: #AFAFAF;
 }
 
-/* footer */
+/* FOOTER */

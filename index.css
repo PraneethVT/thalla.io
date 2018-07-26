@@ -1,5 +1,70 @@
+body {
+  margin: 0;
+  font-family: Muli;
+}
+
+/* Start of landing page */
+#landing {
+  background-color: blue;
+  margin-bottom: 200px;
+}
+
+#landing_pic_container {
+  width: 100%; /* or whatever is required */
+  height: 100vh;
+  text-align: center; /* ensures the image is always in the h-middle */
+  overflow: hidden; /* hide the cropped portion */
+}
+
+#landing_pic {
+  position: relative; /* allows repositioning */
+  left: 100%; /* move the whole width of the image to the right */
+  margin-left: -260%; /*magic! */
+
+  height: 100%;
+  width: auto;
+  vertical-align: top;
+}
+
+#landing_text_container {
+  position: absolute;
+  top: 50%; 
+  width: 100%;
+  text-align: center;
+}
+
+#top {
+  color: white;
+  font-style: italic;
+  font-size: 20.8px;
+  margin: 0;
+  font-weight: 300;
+}
+
+#bottom {
+  color: white;
+  font-weight: 600;
+  font-size: 60px;
+  margin: 0;
+}
+
+#my_story_text_container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 230%;
+}
+
+#my_story {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0;
+  position: relative;
+  top: 60%;
+}
+
 /* Arrow stuff */ 
-/*#arrow_holder {
+#arrow_holder {
   width: 100%;
 }
 
@@ -11,7 +76,7 @@
   cursor: pointer;
 
   border-style: solid;
-  border-color: black;
+  border-color: white;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
@@ -32,5 +97,7 @@
   60% {
     transform: translateY(4px);
   }
-}*/
+}
 /* Arrow stuff */
+
+/* End of landing page */

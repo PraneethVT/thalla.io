@@ -16,13 +16,20 @@ body {
 }
 
 #landing_pic {
-  position: relative; /* allows repositioning */
-  left: 100%; /* move the whole width of the image to the right */
-  margin-left: -260%; /*magic! */
-
+  position: relative; 
+  left: 100%; 
+  margin-left: -260%; 
   height: 100%;
   width: auto;
   vertical-align: top;
+}
+
+@media screen and (min-width: 550px) {
+  #landing_pic {
+    transform: scale(1.5);
+    margin-left: -200%;
+    top: 0;
+  }
 }
 
 #landing_text_container {
@@ -189,12 +196,15 @@ body {
   width: 100%;
   position: relative;
   margin: 0;
+  text-align: center;
 }
 
 .project_img {
   display: block;
   width: 100%;
   height: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .project_text {
@@ -305,10 +315,20 @@ body {
 .experience {
   width: 80%;
   margin: 1em auto 1em auto;
+  max-width: 600px;
+  text-align: center;
 }
 .experience_img {
   width: 100%;
   border-radius: 25px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.experience_text_container {
+  text-align: left;
 }
 
 .experience_title {

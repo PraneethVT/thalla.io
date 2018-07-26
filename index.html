@@ -7,18 +7,111 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, blog, Praneeth, Thalla">
     <meta name="author" content="Praneeth Thalla">
     <link rel = "stylesheet" type = "text/css" href = "./index.css"/>
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png">
+    <link rel="shortcut icon" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900" rel="stylesheet">
-    <title>thalla.io | Hey, I'm Praneeth!</title>
+    <title>Hey, I'm Praneeth</title>
   </head>
   <body>
     <div id="landing">
+      <img id="landing_pic" src="./Praneeth1.jpg" alt="Praneeth">
+      <div id="landing_text_container">
+        <div id="intro_text">
+          <p>Hey, I'm</p>
+          <p>Praneeth</p>
+        </div>
+        <div id="my_story_text_container">
+          <p>MY STORY</p>
+          <div id="arrow_holder">
+            <p id="bounce_holder"><i id="arrow" style></i></p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div style="height:1000px;background-color:white;font-size:36px">
-      Scroll Up and Down this page to see the parallax scrolling effect.
-      This div is just here to enable scrolling.
-      Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    <div id="about_me">
+      <div id="about_me_pic_container">
+        <img id="about_me_pic" src="./Praneeth2.jpg" alt="Praneeth">
       </div>
+      <div id="about_me_text">
+        <p id="about_me_name">Praneeth Thalla</p>
+        <p id="about_me_location">Baltimore-bred</p>
+        <p id="about_me_description">Adventurer. Entrepreneur. Philanthropist</p>
+        <p id="about_me_summary">I am a software engineer and a technology enthusiast. I have a deep passion for discovering new and emerging ideas in the field of tech, as well as a drive to constantly learn and improve my skills as a developer. I have a B.S. in Computer Engineering from the University of Maryland.</p>
+      </div>
+    </div>
+
+    <div id="latest_projects">
+      <p>Check out my latest projects</p>
+      <p>I've been breaking down walls since 1995. Here are some of the ways I did it through code.</p>
+      <div id="projects_container">
+        <div class="project">
+          <img class="project_img" id="thallaio_img" src="./project_thallaio.jpg" alt="thalla.io">
+          <p class="project_text" id="thallaio_text">thalla.io</p>
+          <button class="project_button">View Project</button>
+        </div>
+        <div class="project">
+            <img class="project_img" id="upward_img" src="./project_upward.jpg" alt="UpwardHQ">
+            <p class="project_text" id="upward_text">Upward</p>
+            <button class="project_button">View Project</button>
+        </div>
+        <div class="project">
+          <img class="project_img" id="lebot_img" src="./project_lebot.jpg" alt="LeBot">
+          <p class="project_text" id="lebot_text">LeBot</p>
+          <button class="project_button">View Project</button>
+        </div> 
+      </div> 
+      <button id="github_button">My Github</button>
+    </div>
+
+    <div id="experiences">
+      <p>Here's the impact I've made</p>
+      <div class="experience">
+        <img class="experience_img" id="fannie_img" src="./experience_fannie.png" alt="Fannie Mae">
+        <div class="experience_text_container">
+          <p class="experience_title">Fannie Mae</p>
+          <p class="experience_position">Software Engineer, Since Fall 2017</p>
+          <p class="experience_location">Reston, VA</p>
+          <p class="experience_summary">
+              I currently work as a Software Engineer at Fannie Mae, primarily focusing on backend development using Java/Python. Right now, I work closely with the Multifamily Tech team to maintain and implement new functionality for our eServicing Application. Previously, I lead a proof-of-concept project which integrated machine learning into our Dev Ops toolchain.
+
+              • Led a team to implement machine learning algorithms into the Jenkins Pipeline in order to prevent downtime, predict future crashes, and mitigate risk
+              • Developed a POC to accelerate the process of migrating eServicing to a modern UI using AngularJS
+              • Transitioned eServicing back end service calls from EJBs to a REST API</p>
+        </div>
+      </div> 
+      <div class="experience">
+        <img class="experience_img" id="upward_img" src="./experience_upward.png" alt="Upward">
+        <div class="experience_text_container">
+          <p class="experience_title">Upward</p>
+          <p class="experience_position">Co-founder and Lead Developer (May 2016 - Aug 2016)</p>
+          <p class="experience_location">New York City, NY</p>
+          <p class="experience_summary">I cofounded Upward to allow professionals to interact better with each other in a work-based environment. My main role was backend development, where I led and maintained the production of backend services using endpoints written in Node.js and Express. I also managed a database of users, messages, and emails using MongoDB, as well as created an innovative search engine using Elasticsearch.</p>
+        </div>
+      </div> 
+      <div class="experience">
+        <img class="experience_img" id="umd_img" src="./experience_umd.jpg" alt="UMD">
+        <div class="experience_text_container">
+          <p class="experience_title">University of Maryland</p>
+          <p class="experience_position">B.S. in Computer Engineering, graduated May 2017</p>
+          <p class="experience_location">College Park, MD</p>
+          <p class="experience_summary">I am extremely thankful for my four years at UMD, as the wealth of challenges and opportunities allowed me to grow into a well-rounded individual. The world class professors, abundant extracurriculars, and top-ranked research institutions facilitated my engineering skills in the study of computing. The rigorous upper level courses pushed me to my limits and molded me into becoming adaptable and fast-learning, two qualities that are essential in today's world of ever-changing technology.</p>
+        </div>
+      </div> 
+      <div class="experience">
+        <img class="experience_img" id="kaiser_img" src="./experience_kaiser.png" alt="Kaiser Permanente">
+        <div class="experience_text_container">
+          <p class="experience_title">Kaiser Permanente</p>
+          <p class="experience_position">Software Engineer Intern, Summer 2015</p>
+          <p class="experience_location">Silver Spring, MD</p>
+          <p class="experience_summary">Kaiser Permanente offered my first real world experience in tech. As a Software Engineer intern, most of my summer was spent developing OneCare, an iOS app that allowed employees to report company-wide facility issues using a snap & and share technique, similar to Instagram. It was built using the Intel XDK to support cross-platform scalability, and the beta has been deployed in the mid-Atlantic region of Kaiser. Piloting this app provided a great learning experience and heightened my interest in mobile development.</p>
+        </div>
+      </div>
+    </div> 
+
+    <div id="footer">
+      <p>Let's get in touch. Email works best.</p>
+      <p>praneeth@thalla.io</p>
+      <p>Powered by Caffeine 2017</p>
+    </div>
   </body>
 </html>

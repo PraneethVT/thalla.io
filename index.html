@@ -9,6 +9,15 @@
     <link rel = "stylesheet" type = "text/css" href = "./index.css"/>
     <link rel="shortcut icon" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <title>Hey, I'm Praneeth</title>
   </head>
   <body>
@@ -16,19 +25,26 @@
       <div id="landing_pic_container">
         <img src="./Praneeth1.jpg" id="landing_pic" alt="Praneeth">
       </div>
-      <div id="landing_text_container">
+      <!-- <div id="landing_text_container"> -->
         <div id="intro_text">
-          <p id="top">Hey, I'm</p>
+          <div id="line1">&nbsp</div>
+          <p id="top">Hey there, I'm</p>
+          <div id="line2">&nbsp</div>
           <p id="bottom">Praneeth</p>
         </div>
         <div id="my_story_text_container">
-          <p id="my_story">MY STORY</p>
+          <p id="my_story"></p>
           <div id="arrow_holder">
-            <p id="bounce_holder"><i id="arrow" style></i></p>
+            <!-- <a class="btn-floating btn-large waves-effect waves-light blue"><p id="bounce_holder"><i id="arrow"></i></p></a> -->
+            <!-- <p id="bounce_holder"><i id="arrow"></i></p> -->
+            <a class="btn-floating btn-medium waves-effect waves-light blue darken-1"><i class="material-icons">keyboard_arrow_down</i></a>
+
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
+    
+
 
     <div id="about_me">
       <div id="about_me_pic_container">
@@ -119,5 +135,9 @@
       <p id="footer2">praneeth@thalla.io</p>
       <p id="footer3">Powered by Caffeine 2017</p>
     </div>
+
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
   </body>
 </html>

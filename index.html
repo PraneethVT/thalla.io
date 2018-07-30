@@ -6,60 +6,88 @@
     <meta name="description" content="My personal website/blog about Praneeth Thalla">
     <meta name="keywords" content="HTML, CSS, JavaScript, blog, Praneeth, Thalla">
     <meta name="author" content="Praneeth Thalla">
+    
     <link rel = "stylesheet" type = "text/css" href = "./index.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "./landing.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "./about_me.css"/>
     <link rel="shortcut icon" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./main.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <title>Hey, I'm Praneeth</title>
+    <script src="./main.js"></script>
+
+    <title>Hey there, I'm Praneeth</title>
   </head>
   <body>
     <div id="landing">
       <div id="landing_pic_container">
-        <img src="./Praneeth1.jpg" id="landing_pic" alt="Praneeth">
+        <img id="landing_pic" src="./Praneeth1.jpg" alt="Praneeth">
       </div>
-      <!-- <div id="landing_text_container"> -->
-        <div id="intro_text">
-          <div id="line1">&nbsp</div>
-          <p id="top">Hey there, I'm</p>
-          <div id="line2">&nbsp</div>
-          <p id="bottom">Praneeth</p>
-        </div>
-        <div id="my_story_text_container">
-          <p id="my_story"></p>
-          <div id="arrow_holder">
-            <!-- <a class="btn-floating btn-large waves-effect waves-light blue"><p id="bounce_holder"><i id="arrow"></i></p></a> -->
-            <!-- <p id="bounce_holder"><i id="arrow"></i></p> -->
-            <a class="btn-floating btn-medium waves-effect waves-light blue darken-1"><i class="material-icons">keyboard_arrow_down</i></a>
+      <div id="left_line">&nbsp</div>
+      <p id="landing_text_top">Hey there, I'm</p>
+      <div id="right_line">&nbsp</div>
+      <p id="landing_text_bottom">Praneeth</p>
 
-          </div>
+      <div id="my_story_text_container">
+        <p id="my_story"></p>
+        <div id="arrow_holder">
+          <a class="btn-floating btn-medium waves-effect waves-light blue darken-1"><i class="material-icons">keyboard_arrow_down</i></a>
         </div>
-      <!-- </div> -->
+      </div>
     </div>
     
-
-
     <div id="about_me">
-      <div id="about_me_pic_container">
-        <img id="about_me_pic" src="./Praneeth2.jpg" alt="Praneeth">
-      </div>
-      <div id="about_me_text">
-        <p id="about_me_name">Praneeth Thalla</p>
-        <p id="about_me_location">Baltimore-bred</p>
         <p id="about_me_description">Adventurer. Entrepreneur. Philanthropist.</p>
-        <p id="about_me_summary"><strong id="hello">H</strong>ello there! I'm Praneeth and I am a software engineer and a technology enthusiast. I have a deep passion for discovering new and emerging ideas in the field of tech, as well as a drive to constantly learn and improve my skills as a developer. I have a B.S. in Computer Engineering from the University of Maryland.</p>
+        <div id="about_me_pic_container" class="z-depth-1">
+          <img id="about_me_pic" src="./Praneeth2.jpg" alt="Praneeth">
+          <p id="about_me_summary"><strong id="hello">H</strong>ello there! I'm Praneeth and I am a software engineer and a technology enthusiast. I have a deep passion for discovering new and emerging ideas in the field of tech, as well as a drive to constantly learn and improve my skills as a developer. I have a B.S. in Computer Engineering from the University of Maryland.</p>  
+        </div>
+        
+    </div>
+
+    
+
+    <div id="latest_projects">
+      <p id="latest_projects_title">Here's what I've been working on</p>
+      <div id="projects_container">
+        <div class="project">
+          <img class="project_img" id="thallaio_img" src="./project_thallaio.jpg" alt="thalla.io">
+          <div class="project_overlay">
+            <p class="project_text" id="thallaio_text">thalla.io</p>
+            <!-- <div class="project_line" id="thallaio_line">&nbsp</div> -->
+            <p class="project_text_desc" id="thallaio_desc">Personal branding website for Praneeth Thalla</p>
+            <!-- <button class="project_button">View Project</button> -->
+          </div>
+        </div>
+        <div class="project">
+            <img class="project_img" id="upward_img" src="./project_upward.jpg" alt="UpwardHQ">
+            <p class="project_text" id="upward_text">Upward</p>
+            <!-- <div class="project_line" id="upward_line">&nbsp</div> -->
+            <p class="project_text_desc" id="upward_desc">Personal branding website for Praneeth Thalla</p>
+            <!-- <button class="project_button">View Project</button> -->
+        </div>
+        <div class="project">
+          <img class="project_img" id="lebot_img" src="./project_lebot.jpg" alt="LeBot">
+          <p class="project_text" id="lebot_text">LeBot</p>
+          <!-- <div class="project_line" id="lebot_line">&nbsp</div> -->
+          <p class="project_text_desc" id="lebot_desc">our go-to Twitter bot for the latest and most up to date news on LeBron James</p>
+          <!-- <button class="project_button">View Project</button> -->
+        </div> 
+      </div> 
+      <div id="github_button_container">
+        <a id="github_button" class="waves-effect waves-blue btn white blue-text">MY GITHUB</a>
       </div>
     </div>
 
+
+
+    
     <div id="experiences">
       <p id="experiences_header">Here's the impact I've made</p>
+      <div id="experience_line">&nbsp</div>
       <div class="experience">
         <img class="experience_img" id="fannie_img" src="./experience_fannie.png" alt="Fannie Mae">
         <div class="experience_text_container">
@@ -67,11 +95,7 @@
           <p class="experience_position">Software Engineer, Since Fall 2017</p>
           <p class="experience_location">Reston, VA</p>
           <p class="experience_summary">
-              I currently work as a Software Engineer at Fannie Mae, primarily focusing on backend development using Java/Python. Right now, I work closely with the Multifamily Tech team to maintain and implement new functionality for our eServicing Application. Previously, I lead a proof-of-concept project which integrated machine learning into our Dev Ops toolchain.
-
-              • Led a team to implement machine learning algorithms into the Jenkins Pipeline in order to prevent downtime, predict future crashes, and mitigate risk
-              • Developed a POC to accelerate the process of migrating eServicing to a modern UI using AngularJS
-              • Transitioned eServicing back end service calls from EJBs to a REST API</p>
+              I currently work as a Software Engineer at Fannie Mae, primarily focusing on backend development using Java/Python. I work closely with the Multifamily Tech team to maintain and implement new functionality for our eServicing Application. I developed a POC to accelerate the process of migrating eServicing to a modern UI using AngularJS. Previously, I lead a proof-of-concept project which integrated machine learning into our Dev Ops toolchain.</p>
         </div>
       </div> 
       <div class="experience">
@@ -103,36 +127,12 @@
       </div>
     </div> 
 
-    <div id="latest_projects">
-      <p id="latest_projects_title">Check out my latest projects</p>
-      <p id="latest_projects_subtitle">I've been breaking down walls since 1995. Here are some of the ways I did it through code.</p>
-      <div id="projects_container">
-        <div class="project">
-          <img class="project_img" id="thallaio_img" src="./project_thallaio.jpg" alt="thalla.io">
-          <p class="project_text" id="thallaio_text">thalla.io</p>
-          <button class="project_button">View Project</button>
-        </div>
-        <div class="project">
-            <img class="project_img" id="upward_img" src="./project_upward.jpg" alt="UpwardHQ">
-            <p class="project_text" id="upward_text">Upward</p>
-            <button class="project_button">View Project</button>
-        </div>
-        <div class="project">
-          <img class="project_img" id="lebot_img" src="./project_lebot.jpg" alt="LeBot">
-          <p class="project_text" id="lebot_text">LeBot</p>
-          <button class="project_button">View Project</button>
-        </div> 
-      </div> 
-      <div id="github_button_container">
-        <button id="github_button">MY GITHUB</button>
-      </div>
-    </div>
 
     
 
     <div id="footer">
       <p id="footer1">Let's get in touch. Email works best.</p>
-      <p id="footer2">praneeth@thalla.io</p>
+      <p id="footer2"><span>praneeth</span>@thalla.io</p>
       <p id="footer3">Powered by Caffeine 2017</p>
     </div>
 

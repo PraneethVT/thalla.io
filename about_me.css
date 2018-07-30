@@ -1,0 +1,42 @@
+/* ABOUT ME */
+#about_me {
+  width: 100%;
+  background-color: white;
+}
+
+#about_me_pic_container {
+  width: 70%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+  margin-bottom: 4em;
+}
+
+#about_me_pic {
+  width: 100%;
+}
+
+#about_me_description {
+  color: #2196f3;
+  font-weight: 300;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 1em;
+}
+
+#about_me_summary {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 auto;
+  color: #505050;
+  width: 90%;
+  padding-bottom: 3em;
+}
+
+#hello {
+  font-size: 24px;
+}
+
+/* ABOUT ME */

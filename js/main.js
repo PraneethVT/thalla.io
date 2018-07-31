@@ -14,22 +14,8 @@ $(function() {
     $('html,body').animate({scrollTop: $("#about_me").offset().top}, 500, "swing");
   })
 
-
+  /* Element scroll in */
   var documentElement = $(document);
-  //var aboutMeHeader = $("#about_me_header");
- /* documentElement.on('scroll', function() {
-    console.log("About Me Header Top: " + aboutMeHeader.offset().top);
-    console.log("Document Top: " + documentElement.scrollTop());
-    console.log("Window height: " + $(window).height());
-    var answer = (aboutMeHeader.offset().top - documentElement.scrollTop()) / $(window).height();
-    console.log("Answer: " + answer);
-
-    if (answer > 0 && answer < 0.85) {
-      $("#about_me_header").fadeTo(1000, 1);
-    }
-  
-  });*/
-
   var fadeInScrollElement = $(".fadein_with_scroll");
   documentElement.on('scroll', function() {
     fadeInScrollElement.each(function() {
@@ -41,30 +27,24 @@ $(function() {
       }
     })
   })
-  
 
-  /* Projects Section overlay animations */
-  $("#thallaio_img").click(function() {
-    $("#thallaio_overlay").toggle("scale");
+  var thallaioImg = $("#thallaio_img");
+  var thallaioOverlay = $("#thallaio_overlay");
+  documentElement.on('scroll', function() {
+    var range = thallaioImg.offset().top - $(window).scrollTop();
+    console.log(range);
+    if (range > 50 && range < 350) {
+      // thallaioOverlay.animate({opacity: 1}, 150);
+      thallaioOverlay.removeClass("project_overlay");
+      thallaioOverlay.addClass("onMode");
+      console.log('in range');
+    } else {
+      // thallaioOverlay.animate({opacity: 0}, 150);
+      thallaioOverlay.removeClass("onMode");
+      thallaioOverlay.addClass("project_overlay");
+      console.log('out of range');
+    }
   })
-  $("#thallaio_img").mouseleave(function() {
-    $("#thallaio_overlay").toggle("scale");
-  });
 
-
-  $("#upward_img").click(function() {
-    $("#upward_overlay").animate({opacity: "show"}, 400);
-  })
-  $("#upward_img").mouseleave(function() {
-    $("#upward_overlay").animate({opacity: "hide"}, 400);
-  });
-
-
-  $("#lebot_img").click(function() {
-    $("#lebot_overlay").animate({opacity: "show"}, 400);
-  })
-  $("#lebot_img").mouseleave(function() {
-    $("#lebot_overlay").animate({opacity: "hide"}, 400);
-  });
 
 });

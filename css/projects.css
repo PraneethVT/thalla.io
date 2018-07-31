@@ -1,5 +1,4 @@
 #projects {
-  width: 100%;
   background-color: #2196f3;
 }
 
@@ -15,75 +14,72 @@
   color: white;
   
   opacity: 0;
-  margin-top: 1.1em;
-}
-
-.projects_container {
-  width: 100%;
+  margin-top: 1em;
 }
 
 .project {
-  width: 100%;
   position: relative;
   margin: 0;
-  text-align: center;
-  
 }
 
 .project_img {
   display: block;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   margin-left: 0;
   margin-right: 0;
   transition: filter .2s;
-  
-  opacity: 0.01;
 }
 
-.project_overlay {
-  opacity: 0; 
+.project_overlay_off {
+  position: absolute;
+  top: 7%;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(0);
+  transition: transform .3s ease-in-out;
+  -webkit-transition: transform .3s ease-in-out;
 }
 
-#thallaio_overlay {
-  transition: all 0.1s ease-in-out;
+.project_overlay_on {
+  transform: scale(1);
+  transition: transform .3s ease-in-out;
+  -webkit-transition: transform .3s ease-in-out;
 }
 
-.onMode {
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 1);
+.darken_image {
+  filter: brightness(35%);
 }
 
 .project_name {
-  position: absolute;
-  top: 20%;
-  left: 41%;
   color: white;
   font-weight: 200;
   font-size: 1.5em;
-  margin: 0;
   border-bottom: 1px solid white;
   padding-bottom: .4em;
+  width: 4em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project_description {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%);
-  text-align: center;
-  width: 65%;
   color: white;
   font-size: 1em;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -.5em;
 }
 
 .project_button {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%);
   border: 1px solid white;
-  cursor: pointer;
+  cursor: pointer;  
+  width: 6em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5em;
 }
 
 

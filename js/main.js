@@ -2,12 +2,11 @@ $(function() {
   /* Landing Page fade in */
    $("#landing_pic").fadeIn(400, function() {
     $("#landing_intro").animate({top: "52%", opacity: 1}, 300, function() {
-      $("#landing_left_line").animate({width: 'toggle'}, 200);
-      $("#landing_right_line").animate({width: "toggle"}, 200, function() {
+      // $("#landing_left_line").animate({width: 'toggle'}, 200);
+      // $("#landing_right_line").animate({width: "toggle"}, 200, function() {
         $("#landing_name").animate({top: "54%", opacity: "show"}, 400, function() {
           $("#landing_arrow_holder").animate({top: "88%", opacity: "show"}, 150)
         });
-      });
     });  
    });
   $("#landing_arrow_holder").click(function() {
@@ -28,23 +27,39 @@ $(function() {
     })
   })
 
+  /* Image overlay animations */
   var thallaioImg = $("#thallaio_img");
   var thallaioOverlay = $("#thallaio_overlay");
+  var upwardImg = $("#upward_img");
+  var upwardOverlay = $("#upward_overlay");
+  var lebotImg = $("#lebot_img");
+  var lebotOverlay = $("#lebot_overlay");
   documentElement.on('scroll', function() {
-    var range = thallaioImg.offset().top - $(window).scrollTop();
-    console.log(range);
-    if (range > 50 && range < 350) {
-      // thallaioOverlay.animate({opacity: 1}, 150);
-      thallaioOverlay.removeClass("project_overlay");
-      thallaioOverlay.addClass("onMode");
-      console.log('in range');
+    var rangethallaio = thallaioImg.offset().top - $(window).scrollTop();
+    var rangeupward = upwardImg.offset().top - $(window).scrollTop();
+    var rangelebot = lebotImg.offset().top - $(window).scrollTop();
+    if (rangethallaio > 100 && rangethallaio < 350) {
+      thallaioOverlay.addClass("project_overlay_on");
+      thallaioImg.addClass("darken_image");
     } else {
-      // thallaioOverlay.animate({opacity: 0}, 150);
-      thallaioOverlay.removeClass("onMode");
-      thallaioOverlay.addClass("project_overlay");
-      console.log('out of range');
+      thallaioOverlay.removeClass("project_overlay_on");
+      thallaioImg.removeClass("darken_image");
+    }
+
+    if (rangeupward > 100 && rangeupward < 350) {
+      upwardOverlay.addClass("project_overlay_on");
+      upwardImg.addClass("darken_image");
+    } else {
+      upwardOverlay.removeClass("project_overlay_on");
+      upwardImg.removeClass("darken_image");
+    }
+
+    if (rangelebot > 100 && rangelebot < 350) {
+      lebotOverlay.addClass("project_overlay_on");
+      lebotImg.addClass("darken_image");
+    } else {
+      lebotOverlay.removeClass("project_overlay_on");
+      lebotImg.removeClass("darken_image");
     }
   })
-
-
 });

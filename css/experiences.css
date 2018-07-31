@@ -1,0 +1,84 @@
+#experiences {
+  width: 100%;
+  background-color: white;
+}
+
+#experiences_header {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-top: 1.2em;
+  font-size: 28px;
+  font-weight: 300;
+
+  opacity: 0;
+  margin-top: .5em;
+}
+
+#experiences_line {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.75);
+
+  opacity: 0;
+  margin-top: 1.5em;
+}
+
+.experience {
+  width: 80%;
+  margin: 1em auto 1em auto;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.experience_img {
+  width: 100%;
+  border-radius: 25px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  opacity: 0;
+  margin-top: 2em;
+}
+
+.experience_text_container {
+  text-align: left;
+  
+  opacity: 0;
+  margin-top: 3em;
+}
+
+.experience_title {
+  font-size: 22px;
+  margin-bottom: 0;
+  color: #2196f3;
+
+}
+
+.experience_position {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgb(94, 149, 22);
+  font-weight: 700;
+
+}
+
+.experience_location {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: .3em;
+
+}
+
+.experience_summary {
+  font-size: 15px;
+  color: #50555c;
+  font-weight: 100;
+
+}

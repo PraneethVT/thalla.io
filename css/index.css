@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Muli;
+}
+
+#footer {
+  text-align: center;
+  color: white;
+  height: 12em;
+  background-color: #3B3B3B;
+  width: 100%;
+
+  padding-top: 1.5em;
+}
+
+#footer_message {
+  font-size: 16px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 100;
+
+  opacity: 0;
+  margin-top: .5em;
+}
+
+#footer_email {
+  font-weight: 700;
+  font-size: 22px;
+
+  opacity: 0;
+  margin-top: 1em;
+}
+
+#footer_email span {
+  color: #2196f3;
+}
+
+#footer_copyright {
+  margin-top: 3em;
+  font-size: 12px;
+  color: #AFAFAF;
+}

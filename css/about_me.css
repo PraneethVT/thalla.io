@@ -6,7 +6,7 @@
 .about_me_header {
   color: #2196f3;
   font-weight: 300;
-  font-size: 36px;
+  font-size: 2.2em;
   text-align: center;
   margin-bottom: 0;
   
@@ -23,8 +23,8 @@
 }
 
 #about_me_pic_container {
-  width: 70%;
-  max-width: 400px;
+  width: 75%;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2em;
@@ -42,7 +42,7 @@
 }
 
 #about_me_summary {
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 300;
   margin: 0 auto;
   color: #505050;
@@ -54,5 +54,39 @@
 }
 
 #hello {
-  font-size: 24px;
+  font-size: 2em;
+}
+
+/* Mobile devices only */
+@media only screen and (min-width: 350px) {
+  .about_me_header {
+    font-size: 2.6em;
+  }
+  #about_me_header_first {
+    padding-top: .7em;
+  }
+  #about_me_header_last {
+    padding-bottom: 1.2em;
+  }
+
+  #about_me_summary {
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 400px) {
+
+}
+
+@media screen and (min-width: 450px) {
+
+}
+
+@media screen and (min-width: 600px) {
+  .about_me_header {
+    font-size: 3em;
+  }
+  #about_me_summary {
+    font-size: 1.3em; 
+  }
 }

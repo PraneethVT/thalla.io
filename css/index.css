@@ -6,30 +6,31 @@ body {
 #footer {
   text-align: center;
   color: white;
-  height: 12em;
   background-color: #3B3B3B;
   width: 100%;
 
-  padding-top: 1.5em;
+  padding-top: 3em;
+  padding-bottom: 4em;
 }
 
 #footer_message {
-  font-size: 16px;
+  font-size: 1.3em;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   font-weight: 100;
+  margin-bottom: 1em;;
 
   opacity: 0;
-  margin-top: .5em;
 }
 
 #footer_email {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-top: 0;
 
   opacity: 0;
-  margin-top: 1em;
 }
 
 #footer_email span {
@@ -37,7 +38,27 @@ body {
 }
 
 #footer_copyright {
-  margin-top: 3em;
-  font-size: 12px;
+  font-size: 1em;
   color: #AFAFAF;
+
+  opacity: 0;
 }
+
+/* Mobile devices only */
+@media only screen and (min-width: 350px) {
+  #footer_message {
+    font-size: 1.4em;
+  }
+  #footer_email {
+    font-size:2.4em;
+  }
+}
+
+@media screen and (min-width: 400px) {
+
+}
+
+@media screen and (min-width: 450px) {
+
+}
+

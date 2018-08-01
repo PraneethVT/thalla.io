@@ -11,65 +11,37 @@
   position: relative; 
   left: 100%; 
   height: 100%;
-  margin-left: -318%; 
+  margin-left: -380%; 
   width: auto;
   vertical-align: top;
   transform: scale(1.6);
-  display: none;
+  /* display: none; */
   filter: brightness(78%);
-}
-
-@media screen and (min-width: 550px) {
-  #landing_pic {
-    transform: scale(1.5);
-    margin-left: -200%;
-    top: 0;
-  }
 }
 
 #landing_intro {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
   color: white;
   font-style: italic;
-  font-size: 24px;
+  font-size: 1.7em;
   margin: 0;
   font-weight: 400;
 
   opacity: 0;
 }
 
-#landing_left_line {
-  display: none;
-  position: absolute;
-  top: 51.5%;
-  left: 71.5%;
-  width: 16%;
-  /* border-bottom: 4px solid #1e88e5; */
-  border-bottom: 2px solid #2196f3;
-}
-
-#landing_right_line {
-  display: none;
-  position: absolute;
-  top: 51.5%;
-  right: 70.5%;
-  width: 16%;
-  /* border-bottom: 4px solid #1e88e5; */
-  border-bottom: 2px solid #2196f3;
-}
-
 #landing_name {
   position: absolute;
-  top: 54%;
+  top: 53.5%;
   width: 100%;
   text-align: center;
   color: white;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 4.5em;
   margin: 0;
   display: none;
 }
@@ -78,10 +50,55 @@
   width: 100%;
   text-align: center;
   position: absolute;
-  top: 86%;
+  top: 90%;
   display: none;
 }
 
 #landing_arrow_holder i {
-  transform: scale(1.3);
+  transform: scale(1.6);
+}
+
+
+/* Mobile devices only */
+@media only screen and (min-width: 350px) {
+  #landing_pic {
+    margin-left: -350%;
+  }
+  #landing_intro {
+    font-size: 1.8em;
+  }
+
+  #landing_name {
+    font-size: 5em;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  #landing_pic {
+    margin-left: -340%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  #landing_pic {
+    transform: scale(1.5);
+    margin-left: -300%;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #landing_pic {
+    transform: scale(1.5);
+    margin-left: -200%;
+    top: 0;
+  }
+
+  #landing_intro {
+    font-size: 2.2em;
+  }
+  #landing_name {
+    font-size: 7em;
+    font-weight: 700;
+  }
 }

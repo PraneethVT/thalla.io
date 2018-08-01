@@ -4,7 +4,7 @@
 
 #projects_header {
   text-align: center;
-  font-size: 28px;
+  font-size: 2em;
   font-weight: 200;
   width: 70%;
   margin-left: auto;
@@ -17,27 +17,34 @@
   margin-top: 1em;
 }
 
+.projects_containter {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .project {
   position: relative;
   margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project_img {
   display: block;
   width: 100%;
-  max-width: 600px;
-  margin-left: 0;
-  margin-right: 0;
+
   transition: filter .2s;
 }
 
 .project_overlay_off {
   position: absolute;
-  top: 7%;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   transform: scale(0);
   transition: transform .3s ease-in-out;
   -webkit-transition: transform .3s ease-in-out;
@@ -53,6 +60,15 @@
   filter: brightness(35%);
 }
 
+.overlay_container {
+  position: relative;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .project_name {
   color: white;
   font-weight: 200;
@@ -60,28 +76,39 @@
   border-bottom: 1px solid white;
   padding-bottom: .4em;
   width: 4em;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto; 
+  margin-right: auto;  
+  margin-bottom: .5em;
 }
 
 .project_description {
   color: white;
   font-size: 1em;
-  width: 60%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -.5em;
 }
 
 .project_button {
   border: 1px solid white;
   cursor: pointer;  
-  width: 6em;
+  width: 5em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: .5em;
+  margin-top: 1.4em;
+  color: white;
+  padding: .4em .5em;
+  text-align: center;
+  transition: background-color .25s ease-in-out;
 }
 
+.project_button a {
+  color: white;
+}
+
+.project_button:hover {
+  background-color: #2196f3;
+}
 
 
  #github_button_container {
@@ -96,4 +123,46 @@
 
 #github_button {
   margin: 0 auto;
+}
+
+/* Mobile devices only */
+@media only screen and (min-width: 350px) {
+  .project_name {
+    font-size: 1.75em;
+  }
+  .project_description {
+    font-size: 1.15em;
+  }
+  #github_button {
+    font-size: 1.05em;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .overlay_container {
+    top: 38%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  #projects_header {
+    font-size: 2.4em;
+  }
+  .project_name {
+    font-size: 2em;
+  }
+
+  .project_description {
+    font-size: 1.25em;
+  }
+
+  #github_button {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #projects_header {
+    font-size: 3em;
+  }
 }

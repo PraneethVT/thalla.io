@@ -28,16 +28,14 @@
 
     <!-- Landing Page -->
     <div id="landing">
+      <!-- Background image -->
       <figure class="rise" id="landing_pic_container">
           <img id="landing_pic" src="./images/praneeth_landing.jpg" alt="Praneeth">  
       </figure>
-      <!-- </div> -->
-      
-      <!-- <div id="landing_left_line">&nbsp</div> -->
+      <!-- Welcome message -->
       <p id="landing_intro">Hey there, I'm</p>
-      <!-- <div id="landing_right_line">&nbsp</div> -->
       <p id="landing_name">Praneeth</p>
-      
+      <!-- Bottom arrow button -->
       <div id="landing_arrow_holder">
         <a class="btn-floating btn-medium waves-effect waves-light blue darken"><i class="material-icons">keyboard_arrow_down</i></a>
       </div>
@@ -46,48 +44,69 @@
 
     <!-- About Me Section -->
     <div id="about_me">
-        <p class="about_me_header fadein_with_scroll" id="about_me_header_first">Adventurer.</p>
-        <p class="about_me_header fadein_with_scroll">Entrepreneur. </p>
-        <p class="about_me_header fadein_with_scroll" id="about_me_header_last">Philanthropist. </p>
-        
-        <div id="about_me_pic_container" class="z-depth-1 fadein_with_scroll" >
-          <img id="about_me_pic" class="fadein_with_scroll" src="./images/praneeth_about_me.jpg" alt="Praneeth">
-          <p id="about_me_summary" class="fadein_with_scroll"><strong id="hello">H</strong>ello there! I'm Praneeth and I am a software engineer and a technology enthusiast. I have a deep passion for discovering new and emerging ideas in the field of tech, as well as a drive to constantly learn and improve my skills as a developer. I graduated in 2013 with a B.S. in Computer Engineering from the University of Maryland.</p>  
-        </div>
+      <!-- Header -->
+      <p class="about_me_header fadein_with_scroll" id="about_me_header_first">Adventurer.</p>
+      <p class="about_me_header fadein_with_scroll">Entrepreneur. </p>
+      <p class="about_me_header fadein_with_scroll" id="about_me_header_last">Philanthropist. </p>
+      <!-- Pic card container -->
+      <div id="about_me_pic_container" class="z-depth-1 fadein_with_scroll" >
+        <!-- Profile pic -->
+        <img id="about_me_pic" class="fadein_with_scroll" src="./images/praneeth_about_me.jpg" alt="Praneeth">
+        <!-- Summary -->
+        <p id="about_me_summary" class="fadein_with_scroll"><strong id="hello">H</strong>ello there! I'm Praneeth and I am a software engineer and a technology enthusiast. I have a deep passion for discovering new and emerging ideas in the field of tech, as well as a drive to constantly learn and improve my skills as a developer. I graduated in 2013 with a B.S. in Computer Engineering from the University of Maryland.</p>  
+      </div>
     </div>
 
     
     <!-- Projects Section -->
     <div id="projects">
+      <!-- Header -->
       <p id="projects_header" class="fadein_with_scroll">Here's what I've been working on</p>
+
+      <!-- Projects -->
       <div id="projects_container">
+        <!-- thalla.io -->
         <div class="project">
+          <!-- Image -->
           <img class="project_img" id="thallaio_img" src="./images/project_thallaio.jpg" alt="thalla.io">
+          <!-- Image overlay -->
           <div class="project_overlay_off" id="thallaio_overlay">
-            <p class="project_name" id="thallaio_name">thalla.io</p>
-            <p class="project_description" id="thallaio_description">Personal branding website for Praneeth Thalla</p>
-            <div class="project_button" id="thallaio_button">
-              <a class="waves-effect waves-light btn-flat white-text btn-small">VIEW</a>
+            <div class="overlay_container">
+              <p class="project_name" id="thallaio_name">thalla.io</p>
+              <p class="project_description" id="thallaio_description">Personal branding website for Praneeth Thalla</p>
+              <div class="project_button" id="thallaio_button">
+                <a href="https://github.com/PraneethVT/thalla.io" target="_blank">VIEW</a>
+              </div>
             </div>
           </div>
         </div>
+        <!-- Upward -->
         <div class="project">
-            <img class="project_img" id="upward_img" src="./images/project_upward.jpg" alt="Upward">
-            <div class="project_overlay_off" id="upward_overlay">
+          <!-- Image -->
+          <img class="project_img" id="upward_img" src="./images/project_upward.jpg" alt="Upward">
+          <!-- Image overlay -->
+          <div class="project_overlay_off" id="upward_overlay">
+            <div class="overlay_container">
               <p class="project_name" id="upward_name">Upward</p>
               <p class="project_description" id="upward_description">Upward is a free messaging platform used to create the incredible.</p>
               <div class="project_button" id="upward_button">
-                <a class="waves-effect waves-light btn-flat white-text btn-small">VIEW</a>
+                <a href="https://www.upwardhq.com/#landing" target="_blank">VIEW</a>
               </div>
             </div>
+          </div>
         </div>
+        <!-- LeBot -->
         <div class="project">
+          <!-- Image -->
           <img class="project_img" id="lebot_img" src="./images/project_lebot.jpg" alt="LeBot">
+          <!-- Image overlay -->
           <div class="project_overlay_off" id="lebot_overlay">
-            <p class="project_name" id="lebot_name">LeBot</p>
-            <p class="project_description" id="lebot_description">Your go-to Twitter bot for the latest and most up to date news on LeBron James</p>
-            <div class="project_button" id="lebot_button">
-              <a class="waves-effect waves-light btn-flat white-text btn-small">VIEW</a>
+            <div class="overlay_container">
+              <p class="project_name" id="lebot_name">LeBot</p>
+              <p class="project_description" id="lebot_description">Your go-to Twitter bot for the latest and most up to date news on LeBron James</p>
+              <div class="project_button" id="lebot_button">
+                <a href="https://twitter.com/LeBotJames23" target="_blank">VIEW</a>
+              </div>
             </div>
           </div>
         </div> 

@@ -1,13 +1,14 @@
 $(function() {
   /* Landing Page fade in */
-  $("#landing_intro").fadeIn(600);
-  $("#landing_name").fadeIn(600, function() {
+  $("#landing_intro").fadeIn(500);
+  $("#landing_name").fadeIn(500, function() {
+    $("#landing_arrow").animate({opacity: 1}, 500);
   });
   
   
-  // $("#landing_arrow_holder").click(function() {
-    // $('html,body').animate({scrollTop: $("#about_me").offset().top}, 500, "swing");
-  // })
+  $("#landing_arrow_holder").click(function() {
+    $('html,body').animate({scrollTop: $("#about_me").offset().top}, 500, "swing");
+  })
 
   /* Element scroll in */
   var documentElement = $(document);

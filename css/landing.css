@@ -15,8 +15,7 @@
   width: auto;
   vertical-align: top;
   transform: scale(1.6);
-  /* display: none; */
-  filter: brightness(87%);
+  filter: brightness(88%);
 }
 
 #landing_intro {
@@ -31,19 +30,20 @@
   margin: 0;
   font-weight: 400;
 
-  opacity: 0;
+  display: none;
 }
 
 #landing_name {
   position: absolute;
-  top: 53.5%;
+  top: 50%;
   width: 100%;
   text-align: center;
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 4.5em;
   margin: 0;
-  opacity: 0;
+  
+  display: none;
 }
 
 #landing_arrow_holder {
@@ -51,11 +51,6 @@
   text-align: center;
   position: absolute;
   top: 90%;
-  
-}
-
-#landing_arrow_holder_p {
-  /* transform: rotate(225deg); */
 }
 
 #landing_arrow {
@@ -88,7 +83,7 @@
 }
 
 
-/* Mobile devices only */
+/* Responsive Design */
 @media only screen and (min-width: 350px) {
   #landing_pic {
     margin-left: -350%;
@@ -125,11 +120,11 @@
 
   #landing_intro {
     font-size: 1.8em;
-    top: 42%;
+    top: 45%;
   }
+
   #landing_name {
     font-size: 7em;
-    font-weight: 600;
-    top: 43.5%;
+    top: 45%;
   }
 }

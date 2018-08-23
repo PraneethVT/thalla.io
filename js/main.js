@@ -1,18 +1,18 @@
 $(function() {
   /* Landing Page fade in */
    $("#landing_pic").fadeIn(1, function() {
-    $("#landing_intro").animate({top: "52%", opacity: 1}, 300, function () {
-      $("#landing_name").animate({top: "53.5%", opacity: "show"}, 300, function() {
+    $("#landing_intro").animate({top: "44%", opacity: 1}, 500, function () {
+      $("#landing_name").animate({top: "43.5%", opacity: 1}, 500, function() {
       // $("#landing_left_line").animate({width: 'toggle'}, 200);
       // $("#landing_right_line").animate({width: "toggle"}, 200, function() {
         
-          $("#landing_arrow_holder").animate({top: "90%", opacity: "show"}, 300)
+          // $("#landing_arrow_holder").animate({top: "90%", opacity: "show"}, 300)
         });
       });
    });
-  $("#landing_arrow_holder").click(function() {
-    $('html,body').animate({scrollTop: $("#about_me").offset().top}, 500, "swing");
-  })
+  // $("#landing_arrow_holder").click(function() {
+    // $('html,body').animate({scrollTop: $("#about_me").offset().top}, 500, "swing");
+  // })
 
   /* Element scroll in */
   var documentElement = $(document);

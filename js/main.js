@@ -74,7 +74,7 @@ $(function() {
   {
     distance: "2em",
     origin: "bottom",
-    viewFactor: "0.3"
+    viewFactor: "0.2"
   });
   /* Footer */
   ScrollReveal().reveal('#footer_message', 

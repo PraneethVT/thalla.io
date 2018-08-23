@@ -20,8 +20,6 @@ body {
   margin-right: auto;
   font-weight: 100;
   margin-bottom: 1em;;
-
-  opacity: 0;
 }
 
 #footer_email {
@@ -29,8 +27,6 @@ body {
   font-size: 2em;
   margin-bottom: 1em;
   margin-top: 0;
-
-  opacity: 0;
 }
 
 #footer_email span {
@@ -40,8 +36,6 @@ body {
 #footer_copyright {
   font-size: 1em;
   color: #AFAFAF;
-
-  opacity: 0;
 }
 
 /* Mobile devices only */

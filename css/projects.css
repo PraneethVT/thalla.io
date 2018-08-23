@@ -12,12 +12,9 @@
 
   padding-top: 1.2em;
   color: white;
-  
-  opacity: 0;
-  margin-top: 1em;
 }
 
-.projects_containter {
+.projects_container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -116,9 +113,6 @@
   padding-top: 4em;
   padding-bottom: 4em;
   text-align: center;
-
-  opacity: 0;
-  margin-top: 1em;
 }
 
 #github_button {
@@ -146,7 +140,7 @@
 
 @media screen and (min-width: 450px) {
   #projects_header {
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
   .project_name {
     font-size: 2em;
@@ -163,6 +157,6 @@
 
 @media screen and (min-width: 600px) {
   #projects_header {
-    font-size: 3em;
+    font-size: 2.4em;
   }
 }

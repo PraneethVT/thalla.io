@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
 
     <title>thalla.io</title>
   </head>
@@ -40,10 +43,9 @@
         <p><i id="landing_arrow"></i></p>
       </div>
     </div>
-    
 
     <!-- About Me Section -->
-    <div id="about_me">
+    <div id="about_me_mobile">
       <!-- Header -->
       <p class="about_me_header fadein_with_scroll" id="about_me_header_first">Adventurer.</p>
       <p class="about_me_header fadein_with_scroll">Entrepreneur. </p>
@@ -55,6 +57,27 @@
         <!-- Summary -->
         <p id="about_me_summary" class="fadein_with_scroll"><strong id="hello">H</strong>ello there! I'm Praneeth and I am a software engineer and a technology enthusiast. I have a deep passion for discovering new and emerging ideas in the field of tech, as well as a drive to constantly learn and improve my skills as a developer. I graduated in 2013 with a B.S. in Computer Engineering from the University of Maryland.</p>  
       </div>
+    </div>
+
+    <div id="about_me_desktop">
+      <div id="about_me_flex_container">
+        <!-- Pic card container -->
+        <div id="about_me_picture_flex_item">
+          <div id="about_me_pic_container" class="fadein_with_scroll" >
+          <!-- Profile pic -->
+            <img id="about_me_pic" class="fadein_with_scroll" src="./images/praneeth_about_me.jpg" alt="Praneeth">
+          </div>
+        </div>
+        
+        <!-- Header -->
+        <div id="about_me_header_flex_item">
+          <p class="about_me_header fadein_with_scroll" id="about_me_header_first">Adventurer.</p>
+          <p class="about_me_header fadein_with_scroll">Entrepreneur. </p>
+          <p class="about_me_header fadein_with_scroll" id="about_me_header_last">Philanthropist. </p>
+          <!-- Summary -->
+          <p id="about_me_summary" class="fadein_with_scroll"><strong id="hello">H</strong>ello there! I'm Praneeth and I am a software engineer and a technology enthusiast. I have a deep passion for discovering new and emerging ideas in the field of tech, as well as a drive to constantly learn and improve my skills as a developer. I graduated in 2013 with a B.S. in Computer Engineering from the University of Maryland.</p>  
+        </div>     
+      </div> 
     </div>
 
     
@@ -113,7 +136,7 @@
       </div> 
 
       <div id="github_button_container" class="fadein_with_scroll">
-        <a id="github_button" class="waves-effect waves-blue btn white blue-text">MY GITHUB</a>
+        <a href="https://github.com/PraneethVT" target="_blank" id="github_button" class="waves-effect waves-blue btn white blue-text">MY GITHUB</a>
       </div>
     </div>
 

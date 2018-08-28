@@ -5,10 +5,16 @@ $(function() {
     $("#landing_arrow").animate({opacity: 1}, 500);
   });
   
-  
+  // $("#landing_arrow_holder").click(function() {
+  //   $('html,body').animate({scrollTop: $(window).scrollTop() + $(window).height() + $("#landing_pic").scrollTop()}, 500);
+  // })
+
   $("#landing_arrow_holder").click(function() {
-    $('html,body').animate({scrollTop: $("#about_me").offset().top}, 500, "swing");
+    $('html,body').animate({scrollTop: $("#about_me_header_first")}, 500);
   })
+
+  // about_me_header_first
+
 
   /* Element scroll in */
   /* Default page wise */

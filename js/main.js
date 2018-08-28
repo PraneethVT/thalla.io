@@ -48,6 +48,27 @@ $(function() {
     viewFactor: "0.9"
   });
 
+  ScrollReveal().reveal('#github_button', 
+  {
+    distance: "3em",
+    origin: "left",
+    viewFactor: "0.5"
+  });
+
+  ScrollReveal().reveal('#projects_container_desktop', 
+  {
+    distance: "3em",
+    origin: "left",
+    viewFactor: "0.5"
+  });
+
+  ScrollReveal().reveal('#github_button_desktop', 
+  {
+    distance: "3em",
+    origin: "left",
+    viewFactor: "0.5"
+  });
+
   /* Experiences */
   ScrollReveal().reveal('#experiences_header', 
   {
@@ -76,6 +97,7 @@ $(function() {
     origin: "bottom",
     viewFactor: "0.2"
   });
+
   /* Footer */
   ScrollReveal().reveal('#footer_message', 
   {
@@ -104,13 +126,14 @@ $(function() {
 
 
   /* Project image overlay animations */
-  var thallaioImg = $("#thallaio_img");
+  var thallaioImg = $("#thallaio_img_desktop");
   var thallaioOverlay = $("#thallaio_overlay");
   var upwardImg = $("#upward_img");
   var upwardOverlay = $("#upward_overlay");
   var lebotImg = $("#lebot_img");
   var lebotOverlay = $("#lebot_overlay");
-  documentElement.on('scroll', function() {
+
+  /*documentElement.on('scroll', function() {
     var rangethallaio = thallaioImg.offset().top - $(window).scrollTop();
     var rangeupward = upwardImg.offset().top - $(window).scrollTop();
     var rangelebot = lebotImg.offset().top - $(window).scrollTop();
@@ -137,5 +160,5 @@ $(function() {
       lebotOverlay.removeClass("project_overlay_on");
       lebotImg.removeClass("darken_image");
     }
-  })
+  })*/
 });

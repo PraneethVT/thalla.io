@@ -33,7 +33,7 @@
     <div id="landing">
       <!-- Background image -->
       <figure class="hudson" id="landing_pic_container">
-          <img id="landing_pic" src="./images/praneeth_landing.jpg" alt="Praneeth">  
+          <img id="landing_pic" src="./images/praneeth_landing.jpg" alt="Praneeth"/>  
       </figure>
       <!-- Welcome message -->
       <p id="landing_intro">Hey there, I'm</p>
@@ -81,8 +81,8 @@
     </div>
 
     
-    <!-- Projects Section -->
-    <div id="projects">
+    <!-- Projects mobile -->
+    <div id="projects_mobile">
       <!-- Header -->
       <p id="projects_header" class="fadein_with_scroll">Here's what I've been working on</p>
 
@@ -134,11 +134,57 @@
           </div>
         </div> 
       </div> 
+    </div>
 
-      <div id="github_button_container" class="fadein_with_scroll">
-        <a href="https://github.com/PraneethVT" target="_blank" id="github_button" class="waves-effect waves-blue btn white blue-text">MY GITHUB</a>
+    <!-- Projects desktop -->
+    <div id="projects_desktop">
+      <!-- Header -->
+      <p id="projects_header" class="fadein_with_scroll">Here's my recent projects</p>
+
+      <!-- Projects -->
+      <div id="projects_container_desktop">
+        
+        <!-- thalla.io -->
+        <div class="project_desktop" onclick="window.open('https://github.com/PraneethVT/thalla.io')">
+          <!-- Image -->
+          <img class="project_img_desktop" id="thallaio_img_desktop" src="./images/project_thallaio.jpg" alt="thalla.io">
+          <!-- Image overlay -->
+          <div class="project_overlay_desktop">
+            <p class="project_name_desktop">thalla.io</p>
+            <p class="project_description_desktop">Personal branding website for Praneeth Thalla</p>
+          </div>
+        </div>
+
+        <!-- Upward -->
+        <div class="project_desktop" onclick="window.open('https://www.upwardhq.com/#landing')">
+          <!-- Image -->
+          <img class="project_img_desktop" src="./images/project_upward.jpg" alt="Upward">
+          <!-- Image overlay -->
+          <div class="project_overlay_desktop">
+            <p class="project_name_desktop">Upward</p>
+            <p class="project_description_desktop">A free messaging platform used to create the incredible</p>
+          </div>
+        </div>
+        <!-- LeBot -->
+        <div class="project_desktop" onclick="window.open('https://twitter.com/LeBotJames23')">
+          <!-- Image -->
+          <img class="project_img_desktop" src="./images/project_lebot.jpg" alt="LeBot">
+          <!-- Image overlay -->
+          <div class="project_overlay_desktop">
+            <p class="project_name_desktop">LeBot</p>
+            <p class="project_description_desktop">Your go-to Twitter bot for the most up to date news on LeBron James</p>
+          </div>
+        </div> 
+      </div> 
+      
+      <div id="github_button_container_desktop">
+        <a href="https://github.com/PraneethVT" target="_blank" class="fadein_with_scroll" id="github_button_desktop">MY GITHUB</a>
       </div>
     </div>
+
+    
+    
+
 
 
     <!-- Experiences mobile -->

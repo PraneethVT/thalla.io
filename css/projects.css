@@ -1,24 +1,21 @@
 #projects_mobile {
   background-color: #2196f3;
-  /* background-color: #3B3B3B; */
 }
 
 #projects_desktop {
   background-color: #2196f3;
   display: none;
   width: 100%;
-  /* height: 100vh; */
 }
 
 #projects_header {
-  text-align: center;
-  font-size: 2em;
-  font-weight: 200;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-
   padding-top: 1.2em;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 200;
   color: white;
 }
 
@@ -30,8 +27,9 @@
 
 .project {
   position: relative;
-  margin: 0;
-  max-width: 800px;
+  max-width: 650px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -39,7 +37,7 @@
 .project_img {
   display: block;
   width: 100%;
-
+  
   transition: filter .2s;
 }
 
@@ -50,6 +48,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
+  
   transform: scale(0);
   transition: transform .3s ease-in-out;
   -webkit-transition: transform .3s ease-in-out;
@@ -68,47 +67,52 @@
 .overlay_container {
   position: relative;
   top: 35%;
-  transform: translateY(-50%);
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  
+  transform: translateY(-50%);
 }
 
 .project_name {
-  color: white;
-  font-weight: 200;
-  font-size: 1.5em;
-  border-bottom: 1px solid white;
-  padding-bottom: .4em;
   width: 4em;
   margin-left: auto; 
   margin-right: auto;  
   margin-bottom: .5em;
+  padding-bottom: .4em;
+  font-size: 1.5em;
+  font-weight: 200;
+  color: white;
+  border-bottom: 2px solid #2196f3;
 }
 
 .project_description {
-  color: white;
-  font-size: 1em;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1em;
+  color: white;
 }
 
 .project_button {
-  border: 1px solid white;
-  cursor: pointer;  
   width: 5em;
+  margin-top: 1.4em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.4em;
-  color: white;
   padding: .4em .5em;
   text-align: center;
+  background-color: #2196f3;
+  color: white;
+  /* color: white; */
+  /* border: 1px solid white; */
+  cursor: pointer;  
+  
   transition: background-color .25s ease-in-out;
 }
 
 .project_button a {
   color: white;
+  text-decoration: none;
 }
 
 .project_button:hover {
@@ -116,32 +120,36 @@
 }
 
 
- #github_button_container {
-  width: 100%; 
-  
-  
-  background-color: #2196f3;
-  text-align: center;
+#github_button_container_mobile {
+  width: 100%;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
-#github_button {
+#github_button_mobile {
   display: block;
+  width: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .4em .5em;
   text-align: center;
-  color: white;
-  background-color: #3B3B3B;
-  /* background-color: #2196f3; */
-  margin: 0 auto;
-  margin-top: 3em;
-  padding: 2em 2em;
-  transition-duration: 0.2s
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #2196f3;
+  background-color: white;
+  /* border: 2px solid white; */
+  cursor: pointer;  
+
+  transition-duration: .25s;
 }
 
-#github_button:hover {
-  background-color: #2196f3;
-  color: white;
+#github_button_mobile:hover {
+  background-color: white;
+  color: #2196f3;
 }
 
 /* Responsive Design */
+/* Mobile */
 @media only screen and (min-width: 350px) {
   .project_name {
     font-size: 1.75em;
@@ -177,8 +185,8 @@
   }
 }
 
-/* DESKTOP */
-@media screen and (min-width: 600px) {
+/* Desktop */
+@media screen and (min-width: 650px) {
   #projects_header {
     font-size: 2.4em;
     padding-top: 2em;
@@ -193,19 +201,17 @@
   }
 
   #projects_container_desktop {
+    display: flex;
     width: 100%;
+    margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3em;
-    padding-left: 2em;
-    padding-right: 2em;
-    display: flex;
     justify-content: center;
   }
 
   .project_desktop {
     position: relative;
-    max-width: 375px;
+    max-width: 400px;
     margin-left: 1em;
     margin-right: 1em;
     cursor: pointer;
@@ -214,6 +220,7 @@
   .project_img_desktop {
     display: block;
     width: 100%;
+    
     transition-duration: .25s;
     -webkit-transition-duration: .25s;
   } 
@@ -226,6 +233,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    
     transform: translate(-50%, -50%);
     transition-duration: .25s;
     -webkit-transition-duration: .25s;
@@ -237,15 +245,15 @@
   }
 
   .project_name_desktop {
-    color: white;
-    font-weight: 200;
-    font-size: .9em;
-    border-bottom: 1px solid #2196f3;
-    padding-bottom: .4em;
     width: 4em;
     margin-left: auto; 
     margin-right: auto;  
     margin-bottom: .2em;
+    padding-bottom: .4em;
+    font-size: .9em;
+    font-weight: 200;
+    color: white;
+    border-bottom: 1px solid #2196f3;
   }
 
   .project_description_desktop {
@@ -269,11 +277,13 @@
     margin-right: auto;
     padding: .4em .5em;
     text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
     color: white;
     background-color: #2196f3;
     border: 2px solid white;
-    font-size: 1.5em;
-    cursor: pointer;  
+    cursor: pointer; 
+     
     transition-duration: .25s;
   }
 
@@ -299,9 +309,9 @@
 
 @media screen and (min-width: 700px) {
   .project_name_desktop {
-    font-size: 1em;
-    padding-bottom: .2em;
     margin-bottom: 0;
+    padding-bottom: .2em;
+    font-size: 1em;
   }
 
   .project_description_desktop {
@@ -313,10 +323,9 @@
 
 @media screen and (min-width: 800px) {
   .project_name_desktop {
-    font-size: 1.4em;
-    padding-bottom: .2em;  
-    border-bottom: 2px solid #2196f3;
     margin-bottom: .3em;
+    font-size: 1.4em;
+    border-bottom: 2px solid #2196f3;
   }
 
   .project_description_desktop {
@@ -327,8 +336,6 @@
 @media screen and (min-width: 900px) {
   .project_name_desktop {
     font-size: 1.4em;
-    padding-bottom: .2em;  
-    border-bottom: 2px solid #2196f3;
     margin-bottom: .3em;
   }
 
@@ -340,9 +347,8 @@
 @media screen and (min-width: 1000px) {
   .project_name_desktop {
     font-size: 1.5em;
-    padding-bottom: .3em;
-    border-bottom: 2px solid #2196f3;
     margin-bottom: .5em;
+    padding-bottom: .3em;
   }
 
   .project_description_desktop {

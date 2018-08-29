@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta data -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="My personal website/blog about Praneeth Thalla">
+    <meta name="description" content="My personal website and blog about Praneeth Thalla">
     <meta name="keywords" content="HTML, CSS, JavaScript, blog, Praneeth, Thalla">
     <meta name="author" content="Praneeth Thalla">
-    
+    <link rel="shortcut icon" href="./favicon.png">
+    <title>thalla.io</title>
+
+    <!-- CSS -->
     <link rel = "stylesheet" type = "text/css" href = "./css/index.css"/>
     <link rel = "stylesheet" type = "text/css" href = "./css/landing.css"/>
     <link rel = "stylesheet" type = "text/css" href = "./css/about_me.css"/>
     <link rel = "stylesheet" type = "text/css" href = "./css/projects.css"/>
     <link rel = "stylesheet" type = "text/css" href = "./css/experiences.css"/>
-    <link rel="shortcut icon" href="./favicon.png">
+    
+    <!-- Libraries: -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
-
+    <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
-
-
-    <title>thalla.io</title>
   </head>
+
   <body>
 
     <!-- Landing Page -->
     <div id="landing">
       <!-- Background image -->
       <figure class="hudson" id="landing_pic_container">
-          <img id="landing_pic" src="./images/praneeth_landing.jpg" alt="Praneeth"/>  
+          <div id="landing_pic"></div>
       </figure>
       <!-- Welcome message -->
       <p id="landing_intro">Hey there, I'm</p>
@@ -44,18 +43,22 @@
       </div>
     </div>
 
+
+
+
+
     <!-- About Me Section -->
     <div id="about_me_mobile">
       <!-- Header -->
       <p class="about_me_header fadein_with_scroll" id="about_me_header_first">Adventurer.</p>
       <p class="about_me_header fadein_with_scroll">Entrepreneur. </p>
       <p class="about_me_header fadein_with_scroll" id="about_me_header_last">Philanthropist. </p>
-      <!-- Pic card container -->
-      <div id="about_me_pic_container" class="z-depth-1" >
+      <!-- Profile pic container -->
+      <div id="about_me_pic_container">
         <!-- Profile pic -->
         <img id="about_me_pic" src="./images/praneeth_about_me.jpg" alt="Praneeth">
         <!-- Summary -->
-        <p id="about_me_summary" class="fadein_with_scroll"><strong id="hello">H</strong>ello there! I'm Praneeth and I am a software engineer and a technology enthusiast. I have a deep passion for discovering new and emerging ideas in the field of tech, as well as a drive to constantly learn and improve my skills as a developer. I graduated in 2013 with a B.S. in Computer Engineering from the University of Maryland.</p>  
+        <p id="about_me_summary" class="fadein_with_scroll"><strong id="hello">H</strong>ello there! I'm Praneeth Thalla and I am a software engineer and a technology enthusiast. I have a deep passion for discovering new and emerging ideas in the field of tech, as well as a drive to constantly learn and improve my skills as a developer. I graduated in 2013 with a B.S. in Computer Engineering from the University of Maryland.</p>  
       </div>
     </div>
 
@@ -79,6 +82,9 @@
         </div>     
       </div> 
     </div>
+
+
+
 
     
     <!-- Projects mobile -->
@@ -134,12 +140,16 @@
           </div>
         </div> 
       </div> 
+
+      <div id="github_button_container_mobile">
+        <a href="https://github.com/PraneethVT" target="_blank" class="fadein_with_scroll" id="github_button_mobile">MY GITHUB</a>
+      </div>
     </div>
 
     <!-- Projects desktop -->
     <div id="projects_desktop">
       <!-- Header -->
-      <p id="projects_header" class="fadein_with_scroll">Here's my recent projects</p>
+      <p id="projects_header" class="fadein_with_scroll">Here's what I've been working on</p>
 
       <!-- Projects -->
       <div id="projects_container_desktop">
@@ -188,8 +198,7 @@
       </div>
     </div>
 
-    
-    
+
 
 
 
@@ -288,6 +297,9 @@
     </div> 
 
 
+
+
+
     <!-- Footer -->
     <div id="footer">
       <p id="footer_message" class="fadein_with_scroll">Let's get in touch. Email works best.</p>
@@ -295,6 +307,5 @@
       <p id="footer_copyright" class="fadein_with_scroll">Powered by Caffeine 2017</p>
     </div>
 
-    <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
 </html>

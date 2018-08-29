@@ -1,12 +1,10 @@
 #experiences_mobile {
   width: 100%;
-  background-color: white;
 }
 
 #experiences_desktop {
   display: none;
   width: 100%;
-  background-color: white;
 }
 
 #experiences_header {
@@ -15,9 +13,9 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 1.5em;
+  text-align: center;
   font-size: 2em;
   font-weight: 300;
-  text-align: center;
 }
 
 #experiences_line {
@@ -32,8 +30,10 @@
 .experience {
   width: 80%;
   max-width: 600px;
-  margin: 1em auto 1em auto;
+  margin-top: 1em;
   margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -62,7 +62,7 @@
   margin-bottom: 0;
   font-size: 1.3em;
   font-weight: 600;
-  color: rgb(94, 149, 22);
+  color: #5e9516;
 }
 
 .experience_location {
@@ -78,11 +78,8 @@
   color: #50555c;
 }
 
-/* Mobile devices only */
-@media only screen and (min-width: 350px) {
- 
-}
-
+/* Responsive Design */
+/* Mobile */
 @media screen and (min-width: 400px) {
   #experiences_header {
     font-size: 2em;
@@ -101,6 +98,7 @@
   }
 }
 
+/* Desktop (horizontal layout) */
 @media screen and (min-width: 800px) {
   #experiences_mobile {
     display: none;
@@ -112,8 +110,8 @@
 
   .experience {
     display: flex;
-    align-items: row;
     max-width: 1000px;
+    align-items: row;
   }
 
   .experience_img {
@@ -124,6 +122,5 @@
   .experience_text_container {
     margin-top: 0;
     margin-left: 3em;
-
   }
 }

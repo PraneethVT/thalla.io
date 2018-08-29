@@ -4,16 +4,16 @@ $(function() {
   $("#landing_name").fadeIn(500, function() {
     $("#landing_arrow").animate({opacity: 1}, 500);
   });
-  
-  // $("#landing_arrow_holder").click(function() {
-  //   $('html,body').animate({scrollTop: $(window).scrollTop() + $(window).height() + $("#landing_pic").scrollTop()}, 500);
-  // })
 
+  /* Landing arrow functionality for mobile/desktop */
   $("#landing_arrow_holder").click(function() {
-    $('html,body').animate({scrollTop: $("#about_me_header_first")}, 500);
+    desktopIsVisible = $('#about_me_desktop').is(':visible');
+    if (desktopIsVisible) {
+      $('html,body').animate({scrollTop: $("#about_me_desktop").offset().top}, 500);
+    } else {
+      $('html,body').animate({scrollTop: $("#about_me_mobile").offset().top}, 500);
+    }
   })
-
-  // about_me_header_first
 
 
   /* Element scroll in */
@@ -25,26 +25,29 @@ $(function() {
     viewFactor: "0.1"
   });
 
+
+
   /* About Me */
   ScrollReveal().reveal('.about_me_header', 
   {
-    distance: "2em",
+    distance: "1em",
     origin: "right",
     viewFactor: "0.9"
   });
   ScrollReveal().reveal('#about_me_header_first', 
   {
-    distance: "2em",
+    distance: "1em",
     origin: "left",
     viewFactor: "0.9"
   });
-  
   ScrollReveal().reveal('#about_me_header_last', 
   {
-    distance: "2em",
+    distance: "1em",
     origin: "left",
     viewFactor: "0.9"
   });
+
+
 
   /* Projects */
   ScrollReveal().reveal('#projects_header', 
@@ -53,27 +56,26 @@ $(function() {
     origin: "left",
     viewFactor: "0.9"
   });
-
   ScrollReveal().reveal('#github_button', 
   {
     distance: "3em",
     origin: "left",
     viewFactor: "0.5"
   });
-
   ScrollReveal().reveal('#projects_container_desktop', 
   {
     distance: "3em",
     origin: "left",
     viewFactor: "0.5"
   });
-
   ScrollReveal().reveal('#github_button_desktop', 
   {
     distance: "3em",
     origin: "left",
     viewFactor: "0.5"
   });
+
+
 
   /* Experiences */
   ScrollReveal().reveal('#experiences_header', 
@@ -82,27 +84,26 @@ $(function() {
     origin: "bottom",
     viewFactor: "0.9"
   });
-
   ScrollReveal().reveal('#experiences_line', 
   {
     distance: "1em",
     origin: "bottom",
     viewFactor: "0.9"
   });
-
   ScrollReveal().reveal('.experience_img', 
   {
     distance: "2em",
     origin: "bottom",
     viewFactor: "0.3"
   });
-
   ScrollReveal().reveal('.experience_text_container', 
   {
     distance: "2em",
     origin: "bottom",
     viewFactor: "0.2"
   });
+
+
 
   /* Footer */
   ScrollReveal().reveal('#footer_message', 
@@ -132,14 +133,14 @@ $(function() {
 
 
   /* Project image overlay animations */
-  var thallaioImg = $("#thallaio_img_desktop");
+  var thallaioImg = $("#thallaio_img");
   var thallaioOverlay = $("#thallaio_overlay");
   var upwardImg = $("#upward_img");
   var upwardOverlay = $("#upward_overlay");
   var lebotImg = $("#lebot_img");
   var lebotOverlay = $("#lebot_overlay");
 
-  /*documentElement.on('scroll', function() {
+  $(window).on('scroll', function() {
     var rangethallaio = thallaioImg.offset().top - $(window).scrollTop();
     var rangeupward = upwardImg.offset().top - $(window).scrollTop();
     var rangelebot = lebotImg.offset().top - $(window).scrollTop();
@@ -166,5 +167,5 @@ $(function() {
       lebotOverlay.removeClass("project_overlay_on");
       lebotImg.removeClass("darken_image");
     }
-  })*/
+  })
 });

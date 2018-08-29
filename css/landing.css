@@ -2,70 +2,69 @@
   width: 100%; 
   height: 100vh;
   margin: 0;
+  text-align: center;
   background: white;
-  text-align: center; 
-  overflow: hidden; 
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 #landing_pic {
-  position: relative; 
-  left: 100%; 
+  position: relative;
   width: auto;
   height: 100%;
-  margin-left: -380%; 
-  vertical-align: top;
-  transform: scale(1.6);
+  background-image: url("../images/praneeth_landing.jpg");
+  background-position-x: -43em;
+  background-position-y: -13em;
+  zoom: 1.3;
   filter: brightness(88%);
 }
 
 #landing_intro {
+  display: none;
   position: absolute;
   top: 48%;
   left: 50%;
-  transform: translate(-50%);
-  text-align: center;
-  color: white;
-  font-style: italic;
-  font-size: 1.7em;
   margin: 0;
+  text-align: center;
+  font-size: 1.5em;
   font-weight: 400;
-
-  display: none;
+  font-style: italic;
+  color: white;
+  transform: translate(-50%);
 }
 
 #landing_name {
+  display: none;
   position: absolute;
   top: 50%;
   width: 100%;
-  text-align: center;
-  color: white;
-  font-weight: 600;
-  font-size: 4.5em;
   margin: 0;
-  
-  display: none;
+  text-align: center;
+  font-size: 4.5em;
+  font-weight: 600;
+  color: white;
 }
 
 #landing_arrow_holder {
-  width: 100%;
-  text-align: center;
   position: absolute;
   top: 90%;
+  width: 100%;
+  text-align: center;
 }
 
 #landing_arrow {
-  border: solid white;
-  border-width: 0 4px 4px 0;
   display: inline-block;
   padding: .4em;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  opacity: 0;
   cursor: pointer;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+
+  animation: bounceBottom 2s infinite; 
   -moz-animation: bounceBottom 2s infinite; 
   -webkit-animation: bounceBottom 2s infinite; 
-  animation: bounceBottom 2s infinite; 
-
-  opacity: 0
 }
 
 @keyframes bounceBottom {
@@ -81,13 +80,12 @@
 }
 
 
+
 /* Responsive Design */
+/* Mobile */
 @media only screen and (min-width: 350px) {
-  #landing_pic {
-    margin-left: -350%;
-  }
   #landing_intro {
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
 
   #landing_name {
@@ -96,33 +94,34 @@
 }
 
 @media screen and (min-width: 400px) {
-  #landing_pic {
-    margin-left: -340%;
-  }
-}
-
-@media screen and (min-width: 450px) {
-  #landing_pic {
-    transform: scale(1.5);
-    margin-left: -300%;
-    top: 0;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  #landing_pic {
-    transform: scale(1.5);
-    margin-left: -200%;
-    top: 0;
-  }
-
   #landing_intro {
-    font-size: 1.8em;
     top: 45%;
+    font-size: 1.8em;
   }
 
   #landing_name {
-    font-size: 7em;
-    top: 45%;
+    top: 46.5%;
+    font-size: 6em;
   }
 }
+
+/* Desktop (added parallax effect for desktop) */
+@media screen and (min-width: 700px) {
+  #landing_pic {
+    background-position-x: -25em;
+    background-position-y: -11em;
+    zoom: 1.1;
+    background-attachment: fixed;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  #landing_pic {
+    background-position-x: 0;
+    background-position-y: -11em;
+    zoom: 1.1;
+    background-attachment: fixed;
+  }
+}
+

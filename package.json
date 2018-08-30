@@ -1,0 +1,19 @@
+{
+  "name": "thalla.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PraneethVT/thalla.io.git"
+  },
+  "author": "Praneeth Thalla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PraneethVT/thalla.io/issues"
+  },
+  "homepage": "https://github.com/PraneethVT/thalla.io#readme"
+}

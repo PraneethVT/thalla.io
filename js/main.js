@@ -62,12 +62,6 @@ $(function() {
     origin: "left",
     viewFactor: "0.5"
   });
-  ScrollReveal().reveal('#projects_container_desktop', 
-  {
-    distance: "3em",
-    origin: "left",
-    viewFactor: "0.5"
-  });
   ScrollReveal().reveal('#github_button_desktop', 
   {
     distance: "3em",
